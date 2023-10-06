@@ -1,0 +1,46 @@
+[
+    {
+      "id": 1,
+      "name": "YOGI MONTHLY WORKSHOP",
+      "image": "https://i.ibb.co/zV49Tzc/event1.jpg",
+      "price": 25.99,
+      "description": "Yoga is a physical, mental, and spiritual practice or discipline. There is a broad variety of schools, practices and goals in Hinduism, Buddhism (including Vajrayana and Tibetan Buddhism and Jainism. The best-known are Hatha yoga and Raja yoga."
+    },
+    {
+      "id": 2,
+      "name": "INDIA YOGA WORKSHOP",
+      "image": "https://i.ibb.co/pL4BNNt/event2.jpg",
+      "price": 29.99,
+      "description": "Yoga is a physical, mental, and spiritual practice or discipline. There is a broad variety of schools, practices and goals in Hinduism, Buddhism (including Vajrayana and Tibetan Buddhism and Jainism. The best-known are Hatha yoga and Raja yoga."
+    },
+    {
+      "id": 3,
+      "name": "THE ESSENTIAL YOGA FESTIVAL SURVIVAL GUIDE",
+      "image": "https://i.ibb.co/VDNDj3c/event3.jpg",
+      "price": 27.99,
+      "description": "Yoga is a physical, mental, and spiritual practice or discipline. There is a broad variety of schools, practices and goals in Hinduism, Buddhism (including Vajrayana and Tibetan Buddhism and Jainism. The best-known are Hatha yoga and Raja yoga."
+    },
+    {
+      "id": 4,
+      "name": "THAI YOGA WORKSHOP",
+      "image": "https://i.ibb.co/DVwGdXP/event4.jpg",
+      "price": 31.99,
+      "description": "Yoga is a physical, mental, and spiritual practice or discipline. There is a broad variety of schools, practices and goals in Hinduism, Buddhism (including Vajrayana and Tibetan Buddhism and Jainism. The best-known are Hatha yoga and Raja yoga."
+    },
+    {
+      "id": 5,
+      "name": "A YOGA ON HIGH FOUNDATION & ENSO TATTOO EVENT",
+      "image": "https://i.ibb.co/QDrWj0m/event5.jpg",
+      "price": 23.99,
+      "description": "Yoga is a physical, mental, and spiritual practice or discipline. There is a broad variety of schools, practices and goals in Hinduism, Buddhism (including Vajrayana and Tibetan Buddhism and Jainism. The best-known are Hatha yoga and Raja yoga."
+    },
+    {
+      "id": 6,
+      "name": "YOGA CHICAGO GRAND OPENING",
+      "image": "https://i.ibb.co/1rgJh8H/event6.jpg",
+      "price": 34.99,
+      "description": "Yoga is a physical, mental, and spiritual practice or discipline. There is a broad variety of schools, practices and goals in Hinduism, Buddhism (including Vajrayana and Tibetan Buddhism and Jainism. The best-known are Hatha yoga and Raja yoga."
+    }
+  ]
+  
+
