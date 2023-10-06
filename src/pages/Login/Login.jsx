@@ -1,18 +1,17 @@
-// import { Link, useLocation } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Navbar from "../Shared/Navbar/Navbar";
-// import { useContext } from "react";
-// import { AuthContext } from "../../providers/AuthProvider";
-// import { useNavigate } from 'react-router-dom';
+import { useContext } from "react";
+import { AuthContext } from "../../providers/AuthProvider";
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
 
-    // const {signIn} = useContext(AuthContext);
-    // const location = useLocation();
-    // const navigate = useNavigate();
+    const {signIn} = useContext(AuthContext);
+    const location = useLocation();
+    const navigate = useNavigate();
 
 
-    // console.log('location in the login page', location);
+    console.log('location in the login page', location);
 
     const handleLogin = e =>{
         e.preventDefault();
@@ -20,20 +19,20 @@ const Login = () => {
         const form = new FormData(e.currentTarget);
         const email = form.get("email");
         const password = form.get("password");
-    //     signIn(email, password)
-    //     .then(result =>{
-    //         console.log(result.user);
+        signIn(email, password)
+        .then(result =>{
+            console.log(result.user);
 
-    //         //navigate after login
-    //         navigate(location?.state ? location.state : '/');
-    //     })
-    //     .catch(error =>{
-    //         console.error(error);
-    //     })
+            //navigate after login
+            navigate(location?.state ? location.state : '/');
+        })
+        .catch(error =>{
+            console.error(error);
+        })
     }
 
     return (
-        <div>
+        <div data-aos="fade-right" data-aos-duration="3000">
             <Navbar></Navbar>
             <div>
             <img className="hero h-[70vh]" src="banner2.jpg" alt="" />

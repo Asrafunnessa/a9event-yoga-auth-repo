@@ -1,12 +1,12 @@
 
 import { Link } from "react-router-dom";
 import Navbar from "../Shared/Navbar/Navbar";
-// import { useContext } from "react";
-// import { AuthContext } from "../../providers/AuthProvider";
+import { useContext } from "react";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const Register = () => {
 
-    // const { createUser } = useContext(AuthContext);
+    const { createUser } = useContext(AuthContext);
 
 
     const handleRegister = e => {
@@ -20,25 +20,25 @@ const Register = () => {
         const name = form.get("name");
         console.log(email, password, name, photo);
 
-    //     //create user
-    //     createUser(email, password)
-    //         .then(result => {
-    //             console.log(result.user);
-    //         })
-    //         .catch(error => {
-    //             console.error(error);
-    //         })
+        //create user
+        createUser(email, password)
+            .then(result => {
+                console.log(result.user);
+            })
+            .catch(error => {
+                console.error(error);
+            })
 
 
     }
 
     return (
-        <div>
+        <div data-aos="fade-left" data-aos-duration="3000">
             <Navbar></Navbar>
             <div>
             <img className="hero h-[70vh]" src="banner1.jpg" alt="" />
                 <h2 className="text-5xl font-bold my-10 text-center">Please Register</h2>
-                <form className="md:w-3/4 lg:w-1/2 mx-auto">
+                <form onSubmit={handleRegister} className="md:w-3/4 lg:w-1/2 mx-auto">
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text">Name</span>
@@ -67,7 +67,7 @@ const Register = () => {
                         </label>
                     </div>
                     <div className="form-control mt-6">
-                        <button className="btn btn-primary">Login</button>
+                        <button className="btn btn-primary">Register</button>
                     </div>
                 </form>
                 <p className="text-center mt-4">Already have an account? Please <Link className="text-blue-600 font-bold" to="/login">Login</Link></p>
