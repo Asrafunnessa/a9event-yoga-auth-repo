@@ -1,3 +1,4 @@
+import { FaGoogle } from 'react-icons/fa';
 import { Link, useLocation } from "react-router-dom";
 import Navbar from "../Shared/Navbar/Navbar";
 import { useContext } from "react";
@@ -7,6 +8,7 @@ import { useNavigate } from 'react-router-dom';
 const Login = () => {
 
     const {signIn} = useContext(AuthContext);
+    const {googleLogIn} = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
 
@@ -28,6 +30,16 @@ const Login = () => {
         })
         .catch(error =>{
             console.error(error);
+        })
+    }
+
+    const handleGoogleLogIn = () =>{
+        googleLogIn()
+        .then((result) => {
+            console.log(result);
+        }) 
+        .catch((error) => {
+            console.log(error);
         })
     }
 
@@ -56,6 +68,12 @@ const Login = () => {
                     <div className="form-control mt-6">
                         <button className="btn btn-primary">Login</button>
                     </div>
+                    <div className="form-control mt-6">
+                <button onClick={handleGoogleLogIn} className="btn btn-outline btn-secondary">
+                    <FaGoogle></FaGoogle>
+                    Login With Google
+                </button>
+            </div>
                 </form>
                 <p className="text-center mt-4">Do not have an account Please <Link className="text-blue-600 font-bold" to="/register">Register</Link></p>
             </div>

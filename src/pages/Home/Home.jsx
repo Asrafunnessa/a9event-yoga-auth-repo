@@ -7,6 +7,7 @@ import ServiceCard from "./ServiceCard";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+// import Footer from "../Shared/Footer/Footer";
 
 const Home = () => {
 
@@ -21,6 +22,7 @@ const Home = () => {
         <div className="mx-auto" data-aos="zoom-in" data-aos-duration="3000">
             <Navbar></Navbar>
             <Banner></Banner>
+            
 
             {/* service container */}
            <div className="grid grid-cols-3 gap-4 mx-auto space-y-4">
